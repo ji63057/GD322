@@ -16,9 +16,6 @@ header.jess {
 aside.jess {
 	background-color: #52AA8A;
 }
-aside2.jess {
-	background-color: #52AA8A;
-}
 
 main.jess {
 	background-color: #F76C5E;
@@ -36,10 +33,6 @@ footer.jess {
 	}
 	
 	.jess-container aside {
-		width: 33%;
-		float: left;
-	}
-	.jess-container aside2 {
 		width: 33%;
 		float: left;
 	}
@@ -67,7 +60,8 @@ footer.jess {
 .jess-grid header,
 .jess-grid footer,
 .jess-grid aside,
-.jess-grid aside2,
+.jess-grid aside,
+.jess-grid aside,
 .jess-grid main {
 	grid-column: span 2;
 }
@@ -75,8 +69,11 @@ footer.jess {
 .jess-grid aside {
 	grid-row: 3;
 }
-.jess-grid aside2 {
+.jess-grid aside {
 	grid-row: 3;
+}
+.jess-grid aside {
+	grid-row: 4;
 }
 
 @media only screen and (min-width: 600px) {
@@ -85,9 +82,14 @@ footer.jess {
 		grid-row: 2;
 	}
 @media only screen and (min-width: 600px) {
-	.jess-grid aside2 {
+	.jess-grid aside {
 		grid-column: 2;
 		grid-row: 3;
+	}
+	@media only screen and (min-width: 600px) {
+	.jess-grid aside {
+		grid-column: 3;
+		grid-row: 4;
 	}
 
 	.jess-grid main {
@@ -102,7 +104,8 @@ footer.jess {
 	<header class="jess">Header</header>
 	<aside class="jess">Sidebar</aside>
 	<main class="jess">Main content</main>
-	<aside2 class="jess">Sidebar2</aside2>
+	<aside class="jess">Sidebar</aside>
+	<aside class="jess">Sidebar</aside>
 	<footer class="jess">Footer</footer>
 </div>
 

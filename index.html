@@ -2,41 +2,39 @@
 <html lang="en"></html>
 
 <!-- CSS Grid -->
-<div class="jess-grid">
-    <header class="jess">Header</header>
-    <aside class="jess">Sidebar</aside>
-    <main class="jess">Main content</main>
-	<aside2 class="jess">Sidebar2</aside2>
-	<aside3 class="jess">Sidebar3</aside3>
-    <footer class="jess">Footer</footer>
+<div class="box-grid">
+    <header class="box">Header</header>
+	<aside class="box">Sidebar 1</aside>
+	<aside2 class="box">Sidebar 2</aside2>
+    <main class="box">Main</main>
+    <footer class="box">Footer</footer>
 </div>
 
 <style type="text/css">
 
-.jess {
+.box {
 	color: rgb(252, 252, 252);
 	padding: 2rem;
-	border-radius: 0px;
 }
 
 /*Background Colors*/
-header.jess {
+header.box {
 	background-color: #3f85ee;
 }
 
-aside.jess {
+aside.box {
 	background-color: #cf921f;
 }
 
-aside2.jess {
+aside2.box {
 	background-color: #f0e21d;
 }
 
-main.jess {
+main.box {
 	background-color: #2b9ea7;
 }
 
-footer.jess {
+footer.box {
 	background-color: #3f85ee;	
 }
 
@@ -50,38 +48,38 @@ footer.jess {
 	grid-template-columns: 3.5fr 3.5fr;
 }
 
-.jess-grid header,
-.jess-grid aside,
-.jess-grid aside2,
-.jess-grid main {
+.box-grid header,
+.box-grid aside,
+.box-grid aside2,
+.box-grid main {
 	grid-column: span 2;
 }
-.jess-grid footer,
+.box-grid footer,
 
 /* Sidebar 1 */
-.jess-grid aside {
+.box-grid aside {
 	grid-row: 1;
 }
 
 @media only screen and (min-width: 600px) {
-	.jess-grid aside {
+	.box-grid aside {
 		grid-column: 1;
 		grid-row: 2;
 	}
 
 /* Sidebar 2 */
-	.jess-grid aside2 {
+	.box-grid aside2 {
 	grid-row: 2;
 }
 
 @media only screen and (min-width: 600px) {
-	.jess-grid aside2 {
+	.box-grid aside2 {
 		grid-column: 2;
 		grid-row: 2;
 	}
 
 /* Main */
-	.jess-grid main {
+	.box-grid main {
 		grid-column: 1;
 		grid-row: 3;
 	}	

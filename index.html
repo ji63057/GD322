@@ -12,35 +12,32 @@
 </div>
 
 <style type="text/css">
-/* Demo styles, not related to Grid. */
+
 .jess {
-	color: rgba(255, 255, 255, 1);
+	color: rgb(252, 252, 252);
 	padding: 2rem;
-	border-radius: 3px;
+	border-radius: 0px;
 }
 
+/*Background Colors*/
 header.jess {
-	background-color: #6B5CA5;
+	background-color: #3f85ee;
 }
 
 aside.jess {
-	background-color: #52AA8A;
+	background-color: #cf921f;
 }
 
 aside2.jess {
-	background-color: #52AA8A;
-}
-
-aside3.jess {
-	background-color: #52AA8A;
+	background-color: #e2d40f;
 }
 
 main.jess {
-	background-color: #F76C5E;
+	background-color: #2b9ea7;
 }
 
 footer.jess {
-	background-color: #3AAED8;	
+	background-color: #3f85ee;	
 }
 
 /* Float-based layout. */
@@ -59,11 +56,6 @@ footer.jess {
 		width: 33%;
 		float: left;
 	}
-
-	.jess-container aside3 {
-		width: 33%;
-		float: left;
-	}
 	
 	.jess-container main {
 		float: left;
@@ -77,7 +69,7 @@ footer.jess {
 	display: table;
 }
 
-/* CSS Grid layout. */
+/* CSS Grid layout */
 .jess-grid {
 	width: 95%;
 	margin: 0 auto;
@@ -89,39 +81,30 @@ footer.jess {
 .jess-grid footer,
 .jess-grid aside,
 .jess-grid aside2,
-.jess-grid aside3,
 .jess-grid main {
 	grid-column: span 2;
 }
 
 .jess-grid aside {
+	grid-row: 1;
+}
+.jess-grid aside {
 	grid-row: 2;
-}
-.jess-grid aside2 {
-	grid-row: 3;
-}
-.jess-grid aside2 {
-	grid-row: 3;
 }
 
 @media only screen and (min-width: 600px) {
 	.jess-grid aside {
-		grid-column: 1;
-		grid-row: 2;
-	}
-@media only screen and (min-width: 600px) {
-	.jess-grid aside2 {
 		grid-column: 2;
 		grid-row: 1;
 	}
 @media only screen and (min-width: 600px) {
-	.jess-grid aside3 {
+	.jess-grid aside {
 		grid-column: 2;
 		grid-row: 2;
 	}
 
 	.jess-grid main {
-		grid-column: 2 / -1;
+		grid-column: 3;
 	}	
 }
 

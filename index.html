@@ -29,7 +29,7 @@ aside.jess {
 }
 
 aside2.jess {
-	background-color: #e2d40f;
+	background-color: #f0e21d;
 }
 
 main.jess {
@@ -88,15 +88,17 @@ footer.jess {
 .jess-grid aside {
 	grid-row: 1;
 }
-.jess-grid aside {
-	grid-row: 2;
-}
 
 @media only screen and (min-width: 600px) {
 	.jess-grid aside {
-		grid-column: 2;
-		grid-row: 1;
+		grid-column: 1;
+		grid-row: 2;
 	}
+
+	.jess-grid aside {
+	grid-row: 2;
+}
+
 @media only screen and (min-width: 600px) {
 	.jess-grid aside {
 		grid-column: 2;
@@ -104,7 +106,8 @@ footer.jess {
 	}
 
 	.jess-grid main {
-		grid-column: 3;
+		grid-column: 1;
+		grid-row: 3;
 	}	
 }
 

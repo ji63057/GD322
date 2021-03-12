@@ -5,7 +5,7 @@
 <div class="box-grid">
     <header class="box">Header</header>
 	<aside class="box">Sidebar 1</aside>
-	<aside2 class="box">Sidebar 2</aside2>
+	<aside2 class="box">Sidebar 2</aside>
     <main class="box">Main</main>
     <footer class="box">Footer</footer>
 </div>
@@ -26,7 +26,7 @@ aside.box {
 	background-color: #e29f22;
 }
 
-aside2.box {
+aside.box {
 	background-color: #f0e21d;
 }
 
@@ -50,7 +50,7 @@ footer.box {
 
 .box-grid header,
 .box-grid aside,
-.box-grid aside2,
+.box-grid aside,
 .box-grid footer,
 .box-grid main {
 	grid-column: span 2;
@@ -69,13 +69,13 @@ footer.box {
 	}
 
 /* Sidebar 2 */
-	.box-grid aside2 {
+	.box-grid aside {
 	grid-column: 2;
 	grid-row: 2;
 }
 
 @media only screen and (min-width: 600px) {
-	.box-grid aside2 {
+	.box-grid aside {
 		grid-column: 2;
 		grid-row: 2;
 	}

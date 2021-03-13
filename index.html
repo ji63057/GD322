@@ -9,6 +9,7 @@
 	<aside2 class="box">Sidebar 2</aside2>
 	<main class="box">Main</main>
 	<div class="box">Div</div>
+	<aside3 class="box">Sidebar 1</aside3>
 	<main2 class="box">Main</main2>
     <footer class="box">Footer</footer>
 </div>
@@ -31,6 +32,10 @@ aside.box {
 
 aside2.box {
 	background-color: #f1ef4b;
+}
+
+aside3.box {
+	background-color: #d6a02c;
 }
 
 main.box {
@@ -60,7 +65,7 @@ footer.box {
 .box-grid header, .box-grid footer, .box-grid main2 {
 	grid-column: span 2;
 }
- .box grid aside, .box grid aside2, .box-grid div, .box-grid main {
+ .box grid aside, .box grid aside2, .box grid aside3, .box-grid div, .box-grid main {
 	grid-column: span 1;
 }
 
@@ -72,6 +77,17 @@ footer.box {
 
 @media only screen and (min-width: 600px) {
 	.box-grid aside {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+.box-grid aside3 {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+@media only screen and (min-width: 600px) {
+	.box-grid aside3 {
 		grid-column: 1;
 		grid-row: 2;
 	}	

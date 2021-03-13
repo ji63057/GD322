@@ -9,6 +9,7 @@
 	<aside2 class="box">Sidebar 2</aside2>
 	<main class="box">Main</main>
 	<div class="box">Div</div>
+	<main2 class="box">Main</main2>
     <footer class="box">Footer</footer>
 </div>
 
@@ -36,6 +37,10 @@ main.box {
 	background-color: #25a096;
 }
 
+main2.box {
+	background-color: #25a096;
+}
+
 div.box {
 	background-color: #4d86f0
 }
@@ -52,7 +57,7 @@ footer.box {
 	grid-template-columns: 1fr 1fr;
 }
 
-.box-grid header, .box-grid footer{
+.box-grid header, .box-grid footer, .box-grid main2 {
 	grid-column: span 2;
 }
  .box grid aside, .box grid aside2, .box-grid div, .box-grid main {
@@ -88,12 +93,21 @@ footer.box {
 		grid-column: 2 / 1;
 		grid-row: 3;
 	}	
+.box-grid main2 {
+		grid-column: 1 / -1;
+		grid-row: 5;
+	}
 
 /* div */
 .box-grid div {
 		grid-column: 2 / 2;
 		grid-row: 3;
 	}	
+	
+/* footer */
+	.box-grid footer {
+		grid-row:6
+	}
 
 }
 

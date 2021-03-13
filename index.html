@@ -9,10 +9,10 @@
 	<aside2 class="box">Sidebar 2</aside2>
 	<main class="box">Main</main>
 	<div class="box">Div</div>
-	<aside3 class="box">Sidebar 1</aside3>
-	<aside4 class="box">Sidebar 2</aside4>
-	<aside5 class="box">Sidebar 1</aside5>
-	<main2 class="box">Main</main2>
+	<aside3 class="box">Sidebar 3</aside3>
+	<aside4 class="box">Sidebar 4</aside4>
+	<aside5 class="box">Sidebar 5</aside5>
+	<main2 class="box">Main2</main2>
     <footer class="box">Footer</footer>
 </div>
 
@@ -80,7 +80,7 @@ footer.box {
 	grid-column: span 1;
 }
 
-/* Sidebar 1*/
+/* Sidebars*/
 .box-grid aside {
 	grid-column: 1;
 	grid-row: 2;
@@ -91,6 +91,18 @@ footer.box {
 		grid-column: 1;
 		grid-row: 2;
 	}
+
+	.box-grid aside2 {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+@media only screen and (min-width: 600px) {
+	.box-grid aside2 {
+		grid-column: 2;
+		grid-row: 2;
+	}	
+}
 
 .box-grid aside3 {
 	grid-column: 1;
@@ -104,31 +116,6 @@ footer.box {
 	}
 }	
 
-.box-grid aside5 {
-	grid-column: 4;
-	grid-row: 4;
-}
-
-@media only screen and (min-width: 600px) {
-	.box-grid aside5 {
-		grid-column: 4;
-		grid-row: 4;
-	}
-}	
-
-/* Sidebar 2*/
-.box-grid aside2 {
-	grid-column: 2;
-	grid-row: 2;
-}
-
-@media only screen and (min-width: 600px) {
-	.box-grid aside2 {
-		grid-column: 2;
-		grid-row: 2;
-	}	
-}
-
 .box-grid aside4 {
 	grid-column: 2;
 	grid-row: 4;
@@ -141,9 +128,21 @@ footer.box {
 	}	
 }
 
+.box-grid aside5 {
+	grid-column: 4;
+	grid-row: 4;
+}
+
+@media only screen and (min-width: 600px) {
+	.box-grid aside5 {
+		grid-column: 4;
+		grid-row: 4;
+	}
+}	
+
 /* main */
 	.box-grid main {
-		grid-column: 2 / 1;
+		grid-column: 1 / -1;
 		grid-row: 3;
 	}	
 .box-grid main2 {
@@ -153,7 +152,7 @@ footer.box {
 
 /* div */
 .box-grid div {
-		grid-column: 2 / 2;
+		grid-column: 3;
 		grid-row: 3;
 	}	
 	
@@ -161,6 +160,11 @@ footer.box {
 	.box-grid footer {
 		grid-row:6
 	}
+	@media only screen and (min-width: 200px) {
+	.box-grid footer {
+		grid-row: 6;
+	}	
+}
 
 }
 
